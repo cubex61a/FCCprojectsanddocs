@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+  }
+  /*above * is used as global selector, box-sizing allows us to include padding and border in an elements total width and height*/
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #f5f6f7;
+  }
+  /*header text transform can be used to manipulate text*/
+  .header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+  }
+  /* flex row is inline (side to side), column (stacking blocks), cross-axis (perpendicular to main axis), 
+  flex wrap sets whether items are forced onto one line or can wrap into multiple via wrap/nowrap, justify
+  defines how browser distributes space between and around content items along main-axis of flex container, gap provides gap between images*/
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  /*border radius smooths corners, content is used to replace with generated value, can be used to define what is rendered inside an element*/
+  .gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .gallery::after {
+    content: "";
+    width: 350px;
+  }
+  
