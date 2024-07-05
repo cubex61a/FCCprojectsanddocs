@@ -1,0 +1,63 @@
+html {
+    background: url(https://media.discordapp.net/attachments/917269997317939264/1257772329585475717/IMG_6494.png?ex=66884243&is=6686f0c3&hm=16a02bdac6b8e04423647acfc885558d3042830683b304f8ca0eaf04ecb17b42&=&format=webp&quality=lossless&width=218&height=472) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  body {
+    padding: 20px;
+    font-family: Bradley Hand, cursive;
+    font-size: 1.15em;
+    color: #E6E6FA;
+    text-align: center;
+  }
+  
+  fieldset {
+    border: 0;
+  }
+  
+  .questionnare {
+    background-color: rgba(92,174,109,90%);
+    color: #EBEB2E;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 700px;
+    text-align: left;
+    outline: none;
+    border-width: 0;
+  }
+  
+  label {
+    margin: 0.5rem 0 auto;
+    display: block;
+  }
+  
+  input, textarea{
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+  }
+  
+  .inline {
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    width: unset;
+  }
+  
+  .selector {
+    width: 100%;
+    margin: 10px 0 0 0;
+    min-height: 2em;
+  }
+  
+  input[type="submit"] {
+      display: block;
+      width: 60%;
+      margin: 1em auto;
+      height: 2em;
+      font-size: 1.1rem;
+      border-color: white;
+      min-width: 300px;
+    }

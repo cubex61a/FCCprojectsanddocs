@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="stinkydustsurvey.css"/>
+  </head>
+  <body>
+    <h1 id="title">Stinky and Dusty Survey</h1>
+    <p id="description">Please fill out the questionnare below</p>
+  <div class="questionnare">
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="name" id="name-label">Name: (required)<input id="name"  type="name" placeholder="Enter your name" name="name" required></label>
+        <label for="mail" id="email-label">Email: (required)<input id="email" name="email" type="email" placeholder="Enter your email"required></label>
+        <label for="age" id="number-label">Age: (optional)<input id="number" name="age" type="number" min="18" max="114" placeholder="Age"></label>
+        <label for="vibe">Which option best describes your current vibe?
+          <select id="dropdown" name="dropdown" class="selector" required>
+            <option value="">(select one)</option>
+            <option value="1">shit</option>
+            <option value="2">ok</option>
+            <option value="3">good</option>
+            <option value="4">eep</option>
+            </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Would you recommend Dusty or Stinky to a friend?</legend>
+        <label><input id="Stinky" type="radio" name="rectype" value="1" class="inline" checked>Stinky</label>
+        <label><input id="Neither" type="radio" name="rectype" value="2" class="inline">Neither</label>
+        <label><input id="Dusty" type="radio" name="rectype" value="3" class="inline">Dusty</label>
+        </fieldset>
+        <fieldset>
+          <legend>What would you like to see improved (about the cats)?</legend>
+          <label for="improv">
+            <input type="checkbox" class="inline" id="nopoop" value="4" name="nopoop">No poop on the bed</label>
+            <label for="improv">
+            <input type="checkbox" class="inline" id="No running away" value="5" name="norun">No running away</label>
+            <label for="improv">
+            <input type="checkbox" class="inline" id="eattrash" value="6" name="eattrash">Stop eating the trash</label>
+            <label for="improv">
+            <input type="checkbox" class="inline" id="noankle" value="7" name="nopoop">No biting ankles</label>
+            <label for="improv">
+            <input type="checkbox" class="inline" id="nospill" value="8" name="nopoop">No spilling food</label>
+          </fieldset>
+        <fieldset>
+          <label for="provide comments">Comments or suggestions?
+            <textarea id="comments" rows="4" columns="30" placeholder="La roche posay..." name="comments" required></textarea></label>
+          </fieldset>
+        <input id="submit"type="submit" value="Submit" />
+     </form>
+     </div>
+   </body>
+</html>
