@@ -1,0 +1,74 @@
+* {
+
+  
+}
+header {
+  font-size: 40px;
+  font-family: Blippo, Fantasy fantasy;
+  text-align: center;
+  padding-top: 50px; 
+  margin-top: 30px;
+  min-height: 100px;
+  background-color: #D3D3D3;
+  border-radius: 9px;
+}
+
+.singledesc {
+  font-size: 21px;
+  padding-bottom: 12px;
+}
+
+img {
+  display: block;
+  width: 1100px;
+  max-width: 100%;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+figcaption {
+  font-size: 21px;
+  text-align: center;
+  font-weight: normal;
+  padding-top: 7px;
+}
+
+.tribinfo {
+background-color: #D3D3D3; 
+border-radius: 9px;
+}
+h2 {
+ text-align: center;
+ font-size: 28px;
+ padding-top: 25px;
+}
+
+ul {
+  display: block;
+  
+}
+
+ li {
+  margin-left: 215px;
+  margin-right: 215px;
+  padding-top: 35px;
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto 15px auto;
+}
+
+blockquote {
+  max-width: 545px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  padding-top: 20px;
+  font-size: 20px;
+}
+ 
+h3 {
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 25px;
+}
