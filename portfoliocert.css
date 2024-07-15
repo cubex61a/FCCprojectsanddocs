@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+
+:root {
+  --main-green: #5A9141;
+  --offwhite: #dfdfe2;
+  --main-white: white;
+  --main-blue: #186266;
+  --main-gray: #2E3939;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'sans-serif';
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--main-green);
+    height: 76px;
+}
+
+.nav >.navlist {
+    display: flex;  
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    margin-right: 2rem;
+    height: 100%;
+}
+
+.navlist > li {
+    color: var(--offwhite);
+    margin: 0 0.4rem;
+    display: block;
+    height: auto;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: auto;
+}
+
+ .nav > .navlist > li:hover {
+    background-color: #234E0F;
+    color: var(--main-white);
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  li > a {
+    color: inherit;
+    text-decoration: none;
+  }
+.welcome-section {
+    background-color: #181413;
+    color: var(--offwhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.project-section {
+  padding: 10rem 2rem;
+    background: var(--main-blue);
+}
+.project_title {
+    color: var(--offwhite);
+    font-size: 0.5rem;
+    padding: 2rem 0.5rem;
+}
+.project_grid > p {
+    font-size: 0.5rem;
+}
+
+h1 {
+    font-size: 60px;
+}
+h2 {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var(--main-white);
+    text-align: center;
+}
+
+.project_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.project-tile {
+    background: var(--main-gray);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.product_image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.project_title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+}
+
+.project_title:hover {
+    transition: transform 0.6s ease-out;
+     transform: scale(1.06);
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+.Contact {
+    background-color: #181413;
+    color: var(--offwhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.btn-show-all {
+    font-size: 2rem;
+    background: var(--main-gray);
+}
+
+.btn-show-all:hover {
+    background-color: var(--main-green);
+    color: var(--main-white);
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.showbutton > .btn-show-all > i:hover {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.5s ease-out;
+}
+
+.showbutton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  font-size: 50px;
+}
+
+.contact_header > p {
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  font-size: 25px;
+}
+
+.contact_info {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.contact_detail {
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+}
+
+.contact_detail:hover {
+    transition: transform 2s ease-out;
+     transform: scale(1.2);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: #181413;
+    border-top: 4px solid var(--main-green);
+}
+
+footer > p {
+    margin: 2rem;
+}
